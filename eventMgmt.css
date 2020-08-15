@@ -1,0 +1,91 @@
+#page_heading {
+    text-align: center;
+    background-image: url('https://st2.depositphotos.com/1010735/8013/v/450/depositphotos_80137042-stock-illustration-confetti-celebration-frame-background.jpg');
+    padding: 15px 10px;
+    margin: 0px;
+    color: rgba( 61,64,91);
+    font-family: fantasy;
+    font-size: 40px;
+    border-bottom: double;
+    border-bottom-width: 20px;
+    text-shadow: 4px 4px 5px gray;
+}
+input, label, span {
+    display: block;
+}
+#display_area {
+    display: inline-flex;
+    width: 100%;
+}
+#form_section {
+    background-color: rgb(129,178,154,0.6);
+    padding: 20px;
+    border: 10px double;
+    width: 50%;
+}
+#desc {
+    margin-bottom: 20px;;
+}
+label.required:after {
+    content: ' *';
+    color: #d80202;
+    font-weight: bold;
+}
+.label {
+    font-weight: bold;
+    font-family: cursive;
+}
+.help-block {
+    color: #d80202;
+    margin-bottom: 7px;
+    font-size: 13px;
+}
+.help-block.hide {
+    visibility: hidden;
+}
+#discount {
+    display: inline-block;
+    width: 38px;
+}
+.button {
+    background-color: darkolivegreen;
+    border-radius: 10px;
+    padding: 5px;
+    border-width: 4px;
+}
+#filter {
+    border-style: solid;
+    border-width: 4px;
+}
+#events_table_div {
+    height: 380px;
+    overflow: scroll;
+    border-style: solid;
+}
+#events_table {
+    max-height: 200px;
+}
+tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+tr:nth-child(odd) {
+    background-color: white;
+}
+#events_table td, #events_table th {
+    border: 2px solid rgb(84, 71, 140);
+    text-align: center;
+    padding: 8px;
+}
+#events_table th {
+    background-color: rgb(61,64,91);
+    color: floralwhite;
+    position: sticky;
+    top: 1px;
+}
+#events_list {
+    padding: 15px 70px;
+    background-color: rgb(224,122,95);
+    border: 10px double;
+    border-left: none;
+    width: 42%;
+}
