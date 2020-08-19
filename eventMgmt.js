@@ -148,6 +148,12 @@ function attachListeners() {
             populateTableRow(filteredRecords[i], tableRow);
         }
     });
+    // for FF, IE11 and Edge when we enter non-numeric characters
+    $($discount).on('blur', function() {
+        if(this.value === '') {
+            this.value = '';
+        }
+    });
 }
 
 window.onload = function() {
