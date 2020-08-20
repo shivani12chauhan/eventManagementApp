@@ -1,0 +1,139 @@
+#page_heading {
+    text-align: center;
+    background-image: url('https://st2.depositphotos.com/1010735/8013/v/450/depositphotos_80137042-stock-illustration-confetti-celebration-frame-background.jpg');
+    padding: 15px 10px;
+    margin: 0px;
+    color: rgb(61,64,91);
+    font-family: fantasy;
+    font-size: 40px;
+    border-bottom: double;
+    border-bottom-width: 20px;
+    text-shadow: 4px 4px 5px gray;
+}
+#display_area {
+    display: inline-flex;
+    width: 100%;
+    input, label, span {
+        display: block;
+    }
+    textarea {
+        resize: none;
+    }
+    #form_section {
+        background-color: rgb(129,178,154,0.6);
+        padding: 20px;
+        border: 10px double;
+        width: 50%;
+        label {
+            font-weight: bold;
+            font-family: cursive;
+        }
+        .required:after {
+            content: ' *';
+            color: #d80202;
+            font-weight: bold;
+        }
+        .help-block {
+            color: #d80202;
+            margin-bottom: 7px;
+            font-size: 13px;
+        }
+        .hide {
+            visibility: hidden;
+        }
+        #event_name {
+            width: 350px;
+            @media screen and (max-width: 740px) {
+                width: 70%;
+            }
+        }
+        #desc {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        #venue {
+            width: 350px;
+            @media screen and (max-width: 720px) {
+                width: 80%;
+            }
+        }
+        #price {
+            width: 100px;
+            @media screen and (max-width: 200px) {
+                width: 60%;
+            }
+        }
+        #discount {
+            display: inline-block;
+            width: 38px;
+        }
+        #footer_buttons {
+            display: flex;
+            .button {
+                background-color: darkolivegreen;
+                border-radius: 10px;
+                padding: 5px;
+                border-width: 4px;
+                color: cornsilk;
+            }
+            #clear_button {
+                margin-right: 4%;
+            }
+        }
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+    }
+}
+#events_list {
+    padding: 15px 15px;
+    background-color: rgb(224,122,95);
+    border: 10px double;
+    width: 42%;
+    @media screen and (min-width: 361px) and (max-width: 780px) {
+        width: 35vw;
+    }
+    @media screen and (max-width: 360px) {
+        width: 20vw;
+    }
+    #filter {
+        border-style: solid;
+        border-width: 4px;
+        @media screen and (max-width: 360px) {
+            width: 100%;
+        }
+    }
+    #events_table_div {
+        height: 380px;
+        overflow: scroll;
+        border-style: solid;
+        #events_table {
+            max-height: 200px;
+            width: 100%;
+            tr:nth-child(even) {
+                background-color: antiquewhite;
+            }
+            tr:nth-child(odd) {
+                background-color: white;
+            }
+            td, th {
+                border: 2px solid rgb(84, 71, 140);
+                text-align: center;
+                padding: 8px;
+            }
+            th {
+                background-color: rgb(61,64,91);
+                color: floralwhite;
+                position: sticky;
+                top: 1px;
+            }
+        }
+    }
+}

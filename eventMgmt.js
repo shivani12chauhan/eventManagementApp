@@ -9,6 +9,7 @@ var $eventsTable = document.getElementById('events_table');
 var $filter = document.getElementById('filter');
 var $validatoryHelp = document.getElementById('validatory_help');
 var $eventsTableBody = $('#events_table tbody');
+var $helpBlocks = document.getElementsByClassName('help-block');
 var eventsTableData = [];
 
 function clearForm() {
@@ -17,6 +18,9 @@ function clearForm() {
     $venue.value = '';
     $price.value = '';
     $discount.value = '';
+    for(var i=0; i<$helpBlocks.length; i++) {
+        $($helpBlocks[i]).addClass('hide');
+    }
 }
 
 function populateTableRow(valuesObject, tableRow) {
